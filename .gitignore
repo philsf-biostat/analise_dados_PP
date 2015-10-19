@@ -11,3 +11,7 @@
 # produced vignettes
 vignettes/*.html
 vignettes/*.pdf
+
+## Emacs temp files (philsf)
+**/auto/
+*~
