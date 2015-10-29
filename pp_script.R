@@ -6,8 +6,8 @@ idade<-dados$IDADE
 #sexo<-factor(dados$SEXO)
 # modelo de como criar os labels:
 sexo<-factor(dados$SEXO, labels=c("M","F"))
-est_civ<-factor(dados$EST_CIV)
-escolar<-factor(dados$ESCOLAR)
+est_civ<-factor(dados$EST_CIV, labels = c("casado","solteiro","viúvo","não informa"))
+escolar<-factor(dados$ESCOLAR,labels = c("1o incompleto","1o completo","2o incompleto","2o completo","superior completo","superior incompleto","analfabeto","não informa"))
 muni_res<-factor(dados$MUNI_RES)
 ocupac<-factor(dados$OCUPAC)
 raca<-factor(dados$RACA)
