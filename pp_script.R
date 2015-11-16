@@ -13,7 +13,7 @@ ocupac<-factor(dados$OCUPAC)
 raca<-factor(dados$RACA)
 renda<-factor(dados$RENDA)
 opc_sex<-factor(dados$OPC_SEX)
-hiv_aids<-factor(dados$HIV_AIDS)
+hiv_aids<-factor(dados$HIV_AIDS, labels=c("HIV","AIDS"))
 
 ## Preparacao dos graficos
 
