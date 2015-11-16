@@ -12,7 +12,7 @@ muni_res<-factor(dados$MUNI_RES)
 ocupac<-factor(dados$OCUPAC)
 raca<-factor(dados$RACA)
 renda<-factor(dados$RENDA)
-opc_sex<-factor(dados$OPC_SEX)
+opc_sex<-factor(dados$OPC_SEX,labels=c("hetero","homo","bi","ignorado"))
 hiv_aids<-factor(dados$HIV_AIDS, labels=c("HIV","AIDS"))
 
 ## Preparacao dos graficos
