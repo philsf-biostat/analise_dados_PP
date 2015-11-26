@@ -1,5 +1,5 @@
-# Análise de dados Pedro Paulo (UFF-2015)
-Consultoria dados do Pedro Paulo (Mestrado Enfermagem UFF)
+# Análise de dados Pedro Paulo Santana (UFF-2015)
+Consultoria dados do Pedro Paulo Santana (Mestrado Enfermagem UFF)
 
 Projeto descritivo, variáveis qualitativas
 
