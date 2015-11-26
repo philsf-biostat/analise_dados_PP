@@ -1,0 +1,9 @@
+.gitignore export-ignore
+.gitattributes export-ignore
+README.md export-ignore
+*.tex text export-ignore
+*.png binary diff=exif
+*.jpg binary diff=exif
+*.gif binary diff=exif
+*.docx diff=word
+*.doc diff=word
