@@ -18,7 +18,12 @@ Para baixar todos os resultados em um único arquivo ZIP, veja os links abaixo:
 [dw-v1.0]: https://github.com/philsf-biostat/analise_dados_PP/releases/tag/v1.0
 [Todos os releases]: https://github.com/philsf-biostat/analise_dados_PP/releases
 
-<!-- ## Estatísticas descritivas -->
+## Estatísticas descritivas
+
+* [descritivas.txt][] ([download][dw-desc-txt])
+
+[descritivas.txt]: https://github.com/philsf-biostat/analise_dados_PP/blob/master/resultados/descritivas.md
+[dw-desc-txt]: https://github.com/philsf-biostat/analise_dados_PP/raw/master/resultados/descritivas.txt
 
 ## Figuras
 
