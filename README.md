@@ -13,9 +13,9 @@ Para baixar todos os resultados em um único arquivo ZIP, veja os links abaixo:
 [Todos os releases][].
 
 [v0.9]: https://github.com/philsf-biostat/analise_dados_PP/releases/tag/v0.9
-[dw-v0.9]: https://github.com/philsf-biostat/analise_dados_PP/releases/tag/v0.9
+[dw-v0.9]: https://github.com/philsf-biostat/analise_dados_PP/archive/v0.9.zip
 [v1.0]: https://github.com/philsf-biostat/analise_dados_PP/releases/tag/v1.0
-[dw-v1.0]: https://github.com/philsf-biostat/analise_dados_PP/releases/tag/v1.0
+[dw-v1.0]: https://github.com/philsf-biostat/analise_dados_PP/archive/v1.0.zip
 [Todos os releases]: https://github.com/philsf-biostat/analise_dados_PP/releases
 
 ## Estatísticas descritivas
