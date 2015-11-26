@@ -2,20 +2,33 @@
 dados<-read.csv("../dataset/dados_pp.csv")
 
 ## Conversao para fatores
-idade<-dados$IDADE
-#sexo<-factor(dados$SEXO)
-# modelo de como criar os labels:
-sexo<-factor(dados$SEXO, labels=c("M","F"))
-est_civ<-factor(dados$EST_CIV, labels = c("casado","solteiro","viúvo","não informa"))
-escolar<-factor(dados$ESCOLAR,labels = c("1o incompleto","1o completo","2o incompleto","2o completo","superior completo","superior incompleto","analfabeto","não informa"))
-muni_res<-factor(dados$MUNI_RES)
-ocupac<-factor(dados$OCUPAC)
-raca<-factor(dados$RACA)
-renda<-factor(dados$RENDA)
-opc_sex<-factor(dados$OPC_SEX,labels=c("hetero","homo","bi","ignorado"))
-hiv_aids<-factor(dados$HIV_AIDS, labels=c("HIV","AIDS"))
 
+# modelo de como criar os labels:
+dados$SEXO<-factor(dados$SEXO, labels=c("M","F"))
+dados$EST_CIV<-factor(dados$EST_CIV, labels = c("casado","solteiro","viúvo","não informa"))
+dados$ESCOLAR<-factor(dados$ESCOLAR,labels = c("1o incompleto","1o completo","2o incompleto","2o completo","superior completo","superior incompleto","analfabeto","não informa"))
+dados$MUNI_RES<-factor(dados$MUNI_RES)
+dados$OCUPAC<-factor(dados$OCUPAC)
+dados$RACA<-factor(dados$RACA)
+dados$RENDA<-factor(dados$RENDA)
+dados$OPC_SEX<-factor(dados$OPC_SEX,labels=c("hetero","homo","bi","ignorado"))
+dados$HIV_AIDS<-factor(dados$HIV_AIDS, labels=c("HIV","AIDS"))
+
+attach(dados)
 ## Preparacao dos graficos
+
+## Frequencias
+# http://www.statmethods.net/stats/frequencies.html
+prop.table(table(SEXO))
+prop.table(table(EST_CIV))
+prop.table(table(ESCOLAR))
+## prop.table(table(MUNI_RES))
+## prop.table(table(OCUPAC))
+## prop.table(table(RACA))
+## prop.table(table(RENDA))
+prop.table(table(OPC_SEX))
+prop.table(table(HIV_AIDS))
+
 
 # histograma das idades
 png("idade_hist.png")
