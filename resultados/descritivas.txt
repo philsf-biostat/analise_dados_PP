@@ -1,0 +1,40 @@
+== Frequências ==
+
+IDADE       SEXO          EST_CIV                ESCOLAR      MUNI_RES
+ Min.   :50.00   M:54   casado     :18   não informa      :49   5      :49
+ 1st Qu.:50.00   F:48   solteiro   :60   1o incompleto    :22   1      :38
+ Median :51.00          viúvo      :17   2o completo      :12   8      : 7
+ Mean   :54.42          não informa: 7   1o completo      : 8   9      : 3
+ 3rd Qu.:56.00                           superior completo: 5   2      : 2
+ Max.   :93.00                           2o incompleto    : 4   3      : 1
+                                         (Other)          : 2   (Other): 2
+ OCUPAC RACA   RENDA      OPC_SEX   HIV_AIDS
+ 1:78   1:48   1: 2   hetero  :63   HIV :28
+ 9:24   2:11   2: 3   homo    :20   AIDS:74
+        4:33   9:97   bi      : 8
+        9:10          ignorado:11
+
+
+== Proporções ==
+
+SEXO
+        M         F
+0.5294118 0.4705882
+
+EST_CIV
+     casado    solteiro       viúvo não informa
+ 0.17647059  0.58823529  0.16666667  0.06862745
+
+ESCOLAR
+      1o incompleto         1o completo       2o incompleto         2o completo
+        0.215686275         0.078431373         0.039215686         0.117647059
+  superior completo superior incompleto          analfabeto         não informa
+        0.049019608         0.009803922         0.009803922         0.480392157
+
+OPC_SEX
+    hetero       homo         bi   ignorado
+0.61764706 0.19607843 0.07843137 0.10784314
+
+HIV_AIDS
+      HIV      AIDS
+0.2745098 0.7254902
