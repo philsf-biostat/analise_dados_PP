@@ -1,5 +1,5 @@
 ## Leitura dos dados
-dados<-read.csv("dados_pp.csv")
+dados<-read.csv("../dataset/dados_pp.csv")
 
 ## Conversao para fatores
 idade<-dados$IDADE
