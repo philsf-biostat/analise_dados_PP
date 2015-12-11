@@ -32,7 +32,7 @@ prop.table(table(HIV_AIDS))
 
 # histograma das idades
 png("idade_hist.png")
-hist(idade, main="Histograma das idades", xlab="Idade", ylab="Quantidade")
+hist(IDADE, main="Histograma das idades", xlab="Idade", ylab="Quantidade")
 dev.off()
 
 # boxplot das idades
@@ -41,13 +41,13 @@ boxplot(IDADE,main="Boxplot das idades",ylab="Idade")
 dev.off()
 
 # barplot do sexo
-counts <- table(sexo)
+counts <- table(SEXO)
 png("sexo-bp.png")
 barplot(counts, col=c("darkblue","red"), legend = rownames(counts), main="Sexo")
 dev.off()
 
 png("sexo-pizza.png")
-pie(table(SEXO), main="Sexo")
+pie(table(SEXO), col=c("darkblue","red"), main="Sexo")
 dev.off()
 
 slices<-table(SEXO)
@@ -56,7 +56,7 @@ pct <- round(slices/sum(slices)*100)
 lbls <- paste(lbls, pct) # add percents to labels 
 lbls <- paste(lbls,"%",sep="") # ad % to labels pie(slices,labels = lbs, col=rainbow(length(lbs)))
 png("sexo-pizza-pct.png")
-pie(slices,labels = lbls, col=rainbow(length(lbls)), main="Sexo")
+pie(slices,labels = lbls, col=c("darkblue","red"), main="Sexo")
 dev.off()
 
 library(plotrix)
