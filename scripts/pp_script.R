@@ -15,20 +15,35 @@ dados$OPC_SEX<-factor(dados$OPC_SEX,labels=c("hetero","homo","bi","ignorado"))
 dados$HIV_AIDS<-factor(dados$HIV_AIDS, labels=c("HIV","AIDS"))
 
 attach(dados)
+
+## Preparação das tabelas
+# Sexo
+sexo_t <- table(SEXO)
+
+# Variáveis, por sexo
+estciv_t <- table(SEXO,EST_CIV)
+escolar_t <- table(SEXO,ESCOLAR)
+munic_t <- table(SEXO,MUNI_RES)
+ocupac_t <- table(SEXO,OCUPAC)
+raca_t <- table(SEXO,RACA)
+renda_t <- table(SEXO,RENDA)
+opcsex_t <- table(SEXO,OPC_SEX)
+hivaids_t <- table(SEXO,HIV_AIDS)
+
 ## Preparacao dos graficos
 
 ## Frequencias
 # http://www.statmethods.net/stats/frequencies.html
-prop.table(table(SEXO))
-prop.table(table(EST_CIV))
-prop.table(table(ESCOLAR))
-## prop.table(table(MUNI_RES))
-## prop.table(table(OCUPAC))
-## prop.table(table(RACA))
-## prop.table(table(RENDA))
-prop.table(table(OPC_SEX))
-prop.table(table(HIV_AIDS))
 
+prop.table(sexo_t)
+prop.table(t(estciv_t))
+prop.table(t(escolar_t))
+prop.table(t(munic_t))
+prop.table(t(ocupac_t))
+prop.table(t(raca_t))
+prop.table(t(renda_t))
+prop.table(t(opcsex_t))
+prop.table(t(hivaids_t))
 
 # histograma das idades
 png("idade_hist.png")
