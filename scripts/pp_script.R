@@ -37,7 +37,7 @@ dev.off()
 
 # boxplot das idades
 png("idade_boxplot.png")
-boxplot(idade,main="Boxplot das idades",ylab="Idade")
+boxplot(IDADE,main="Boxplot das idades",ylab="Idade")
 dev.off()
 
 # barplot do sexo
@@ -47,10 +47,10 @@ barplot(counts, col=c("darkblue","red"), legend = rownames(counts), main="Sexo")
 dev.off()
 
 png("sexo-pizza.png")
-pie(table(sexo), main="Sexo")
+pie(table(SEXO), main="Sexo")
 dev.off()
 
-slices<-table(sexo)
+slices<-table(SEXO)
 lbls<-rownames(slices)
 pct <- round(slices/sum(slices)*100)
 lbls <- paste(lbls, pct) # add percents to labels 
@@ -66,20 +66,21 @@ dev.off()
 detach("package:plotrix")
 
 # barplot do estado civil x sexo
-counts <- table(sexo,est_civ)
+counts <- table(SEXO,EST_CIV)
 png("est_civ-barplot.png")
 barplot(counts, col=c("darkblue","red"), legend = rownames(counts), main="Estado civil")
 dev.off()
 #pie(table(est_civ), main="Estado civil")
 
 # barplot da escolaridade
-counts<-table(sexo,escolar)
+
+counts<-table(SEXO,ESCOLAR)
 png("escolaridade-barplot.png")
 barplot(counts, col=c("darkblue","red"), legend = rownames(counts), main="Escolaridade")
 dev.off()
 
 # pizza da escolaridade
-slices<-table(escolar)
+slices<-table(ESCOLAR)
 lbls<-rownames(slices)
 pct <- round(slices/sum(slices)*100)
 lbls <- paste(lbls, pct) # add percents to labels 
@@ -90,46 +91,46 @@ dev.off()
 #pie3D(slices,labels=lbls,explode=0.1)
 
 # barplot dos municípios
-counts<-table(sexo,muni_res)
+counts<-table(SEXO,muni_res)
 png("muni_res-barplot.png")
 barplot(counts, col=c("darkblue","red"), legend = rownames(counts), main="Município de residência")
 dev.off()
 
 # barplot da ocupação
-counts<-table(sexo,ocupac)
+counts<-table(SEXO,ocupac)
 png("ocupac-barplot.png")
 barplot(counts, col=c("darkblue","red"), legend = rownames(counts), main="Ocupação")
 dev.off()
 
 # barplot da raça
-counts<-table(sexo,raca)
+counts<-table(SEXO,raca)
 png("raca-barplot.png")
 barplot(counts, col=c("darkblue","red"), legend = rownames(counts), main="Raça")
 dev.off()
 
 # barplot da renda
-counts<-table(sexo,renda)
+counts<-table(SEXO,renda)
 png("renda-barplot.png")
 barplot(counts, col=c("darkblue","red"), legend = rownames(counts), main="Renda")
 dev.off()
 
 # barplot da opcao sexual x sexo
-counts <- table(sexo,opc_sex)
+counts <- table(SEXO,OPC_SEX)
 png("opc_sex-barplot.png")
 barplot(counts, col=c("darkblue","red"), legend = rownames(counts), main="Opção sexual")
 dev.off()
 
-# barplot do HIV x sexo
-counts <- table(sexo,hiv_aids)
+# barplot do HIV x SEXO
+counts <- table(SEXO,HIV_AIDS)
 png("hiv_aids-barplot.png")
 barplot(counts, col=c("darkblue","red"), legend = rownames(counts), main="HIV/AIDS")
 dev.off()
 
 ## Sugesões: cruzando informações
-# boxplot idade x sexo
+# boxplot idade x SEXO
 png("idade_sexo-boxplot.png")
-boxplot(idade~sexo,data=dados, main="Idade x Sexo")
+boxplot(IDADE~SEXO,data=dados, main="Idade x Sexo")
 dev.off()
 png("idade_hiv-boxplot.png")
-boxplot(idade~hiv_aids,data=dados, main="Idade x HIX/AIDS")
+boxplot(IDADE~HIV_AIDS,data=dados, main="Idade x HIX/AIDS")
 dev.off()
