@@ -66,63 +66,63 @@ dev.off()
 detach("package:plotrix")
 
 # barplot do estado civil x sexo
-counts <- table(SEXO,EST_CIV)
 png("est_civ-barplot.png")
+counts <- table(SEXO,EST_CIV)
 barplot(counts, col=c("darkblue","red"), legend = rownames(counts), main="Estado civil")
 dev.off()
 #pie(table(est_civ), main="Estado civil")
 
 # barplot da escolaridade
 
-counts<-table(SEXO,ESCOLAR)
 png("escolaridade-barplot.png")
+counts<-table(SEXO,ESCOLAR)
 barplot(counts, col=c("darkblue","red"), legend = rownames(counts), main="Escolaridade")
 dev.off()
 
 # pizza da escolaridade
+png("escolaridade-pizza-pct.png")
 slices<-table(ESCOLAR)
 lbls<-rownames(slices)
 pct <- round(slices/sum(slices)*100)
 lbls <- paste(lbls, pct) # add percents to labels 
 lbls <- paste(lbls,"%",sep="") # ad % to labels pie(slices,labels = lbs, col=rainbow(length(lbs)))
-png("escolaridade-pizza-pct.png")
 pie(slices,labels = lbls, col=rainbow(length(lbls)), main="Escolaridade")
 dev.off()
 #pie3D(slices,labels=lbls,explode=0.1)
 
 # barplot dos municípios
-counts<-table(SEXO,muni_res)
 png("muni_res-barplot.png")
+counts<-table(SEXO,muni_res)
 barplot(counts, col=c("darkblue","red"), legend = rownames(counts), main="Município de residência")
 dev.off()
 
 # barplot da ocupação
-counts<-table(SEXO,ocupac)
 png("ocupac-barplot.png")
+counts<-table(SEXO,ocupac)
 barplot(counts, col=c("darkblue","red"), legend = rownames(counts), main="Ocupação")
 dev.off()
 
 # barplot da raça
-counts<-table(SEXO,raca)
 png("raca-barplot.png")
+counts<-table(SEXO,raca)
 barplot(counts, col=c("darkblue","red"), legend = rownames(counts), main="Raça")
 dev.off()
 
 # barplot da renda
-counts<-table(SEXO,renda)
 png("renda-barplot.png")
+counts<-table(SEXO,renda)
 barplot(counts, col=c("darkblue","red"), legend = rownames(counts), main="Renda")
 dev.off()
 
 # barplot da opcao sexual x sexo
-counts <- table(SEXO,OPC_SEX)
 png("opc_sex-barplot.png")
+counts <- table(SEXO,OPC_SEX)
 barplot(counts, col=c("darkblue","red"), legend = rownames(counts), main="Opção sexual")
 dev.off()
 
 # barplot do HIV x SEXO
-counts <- table(SEXO,HIV_AIDS)
 png("hiv_aids-barplot.png")
+counts <- table(SEXO,HIV_AIDS)
 barplot(counts, col=c("darkblue","red"), legend = rownames(counts), main="HIV/AIDS")
 dev.off()
 
